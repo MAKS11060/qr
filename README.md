@@ -6,9 +6,9 @@ Usage in `HTML`
 ```html
 <img src="https://genqr.deno.dev/svg?text=hello" alt="">
 
-<img src="https://genqr.deno.dev/png?text=world&s=400&b=1" alt="">
+<img src="https://genqr.deno.dev/png?text=world&s=400" alt="">
 
-<img src="https://genqr.deno.dev/svg?text=https%3A%2F%2Fgithub.com%2Fmaks11060%2Fqr&s=500&b=1" alt="">
+<img src="https://genqr.deno.dev/svg?text=https%3A%2F%2Fgithub.com%2Fmaks11060%2Fqr&s=500" alt="">
 ```
 
 Usage in `JS/TS`
@@ -17,7 +17,7 @@ const uri = new URL('https://genqr.deno.dev/svg')
 uri.searchParams.set('text', 'hello')
 uri.searchParams.set('text', 'https://github.com/maks11060/qr')
 uri.searchParams.set('s', '500') // set size
-uri.searchParams.set('b', '1') // set border
+uri.searchParams.set('b', '4') // set border
 
 console.log(uri.toString()) // get encoded url
 ```
